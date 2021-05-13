@@ -1,0 +1,202 @@
+body {
+    .img-container {
+        background-image: url("./imgs/background-.jpg");
+        background-size: cover;
+    }
+    
+
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    padding: 32px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1033AF;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 45px;
+  }
+
+
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    
+    &-top-image {
+        position: relative;
+        width: 50%;
+        margin-bottom: 20px;
+        left: 40px;
+        -webkit-box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85); 
+        box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85);
+        
+    }
+
+    
+
+    &-second-images {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-second-images-s {
+        position: relative;
+        width: 30%;
+        left: 20px;
+        transform: rotate(-5deg);
+    
+    
+    }
+
+    &-second-image-m {
+        position: relative;
+        width: 40%;
+        right: 50px;
+        -webkit-box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85); 
+        box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85);  
+        transform: rotate(10deg); 
+    }
+
+    &-third-image {
+        position: fixed;
+        top: auto;
+        width: 10%;
+        margin-bottom: 60px;
+        filter: blur(2px);
+    }
+
+    &-fourth-images{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 20px;
+    
+    }
+
+    &-fourth-images-c{
+        position: relative;
+        width: 45%;
+        left: 100px;
+        -webkit-box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85); 
+        box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85);
+    
+    }
+
+    &-fourth-images-b{
+        position: relative;
+        width: 45%;
+        left: 230px;
+        -webkit-box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85); 
+        box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85);
+        animation: move 1s infinite alternate;
+        
+    }
+    @keyframes move {
+        from { 
+            left: 0;
+        } to {
+            left: 250px;
+        }
+    }
+    
+
+    &-fourth-images-a {
+        position: relative;
+        width: 50%;
+        left: 200px;
+        -webkit-box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85); 
+        box-shadow: 0px 5px 10px 3px rgba(89,89,89,0.85);
+        
+    }
+    .gallery-fourth-images-a:hover {
+        webkit-filter: blur(5px); 
+        filter: blur(6px);
+    }
+    
+
+    .gallery1 {
+        width: 50%;
+        left: 400px;
+        -webkit-box-shadow: 0px 11px 4px -2px #595959; 
+        box-shadow: 0px 11px 4px -2px #595959;
+        transform: rotate(10deg) scale(0.5, 0.5);
+        
+    }
+
+    .gallery1:hover{
+        transform: rotate(-25deg);
+    
+    }
+}
+
+.about {
+    width: 100%;
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 162%;
+    }
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-headline {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 64px;
+        transform: rotateZ(2deg);
+        }
+    }
+
+    &-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    &-button {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(39,253,29,1) 50%, rgba(252,176,69,1) 100%);
+        border: 2px solid rgb(255, 255, 255);
+        padding: 37px;
+        margin-bottom: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &-button:hover {
+        opacity: 0.5;
+
+    }
+}
